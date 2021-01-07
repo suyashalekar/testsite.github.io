@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suyash Fitness </title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css.css">
+    <!-- Css reset -->
+    <style>
+        body {
+            font-family: 'Baloo Bhai 2', cursive;
+            margin: 0px;
+            padding: 0px;
+            background-image: url('img/bgtwo.jpg');
+            background-position: center;
+            background-size:cover;
+            height: 100vh;
+        }
+
+        /* LEFT PART  */
+        .left {
+
+            position: absolute;
+            /*this will adjust according to the parent which is top of the website*/
+            display: inline-block;
+            top: 5px;
+            left: 20px;
+            margin: 10px;
+            color: whitesmoke;
+            padding: 10px 10px 10px 10px;
+
+
+        }
+
+        .header img {
+            width: 60px;
+            height: 60px;
+            /* margin-left: 10px;
+            margin-top: 10px; */
+        }
+
+        .logotext {
+            font-size: small;
+            line-height: 14px;
+            text-align: center;
+        }
+
+        /* MIDDEL  PART  */
+        .mid {
+            /* border: 3px solid red; */
+
+            margin: 15px auto;
+            border-right: 3px solid #abe136d6;
+            border-bottom: 3px solid #fcf50299;
+            border-left: 3px solid #fcf50299;
+            display: block;
+            width: 33%;
+        }
+
+        .navbar {
+
+            display: inline-block;
+        }
+
+        .navbar li {
+
+            display: inline-block;
+        }
+
+        .navbar li a {
+            color: whitesmoke;
+            text-decoration: none;
+            padding: 20px 20px;
+            font-size: medium;
+
+        }
+
+        .navbar li a:hover,
+        .navbar li a.home:hover {
+            color: gray
+        }
+
+        .navbar li a.home {
+            text-decoration: underline;
+            color: #fcf402b6;
+        }
+
+        /* RIGHT  PART  */
+        .right {
+            position: absolute;
+            /*this will adjust according to the parent which is top of the website*/
+            display: inline-block;
+            top: 5px;
+            color: whitesmoke;
+            padding: 20px 20px;
+            right: 20px;
+            font-size: medium;
+
+            margin: 10px;
+        }
+
+        .btn {
+            font-family: 'Baloo Bhai 2', cursive;
+            background-color: rgba(222, 184, 135, 0);
+            border-radius: 30px;
+            border: none;
+            margin-right: 10px;
+            padding: 3px 5px;
+            cursor: pointer;
+            color: wheat;
+            font-size: 25px;
+        }
+
+        .btn:hover {
+
+            /* border: 3px solid gray; */
+            color: #9c9c91;
+
+        }
+
+        /* CONTAINER */
+        .container {
+            color: cornsilk;
+            margin: 82px 802px 100px 35px;
+            border-radius: 38px;
+            padding: 5px 40px 45px 35px;
+            border: 4px solid gray
+        }
+
+        .container h1 {
+            margin-left: 10px;
+            text-align: center;
+            padding: 10px 0px 0px 0px;
+        }
+
+        /* .btn:hover{
+            color: #fcf402;
+            border: rgb(1, 2, 2);
+        }
+        .btn:hover{
+            color: #fcf402;
+            border: rgb(1, 2, 2);
+        } */
+
+
+        .form-group {
+
+            margin: 10px;
+            border-radius: 30px;
+        }
+
+
+        .form-group input {
+            /* text-align: center; */
+            display: block;
+            width: 500px;
+            padding: 9px 46px 9px 11px;
+            border-radius: 30px;
+        }
+
+        .container bottom{
+            display: block;
+            width: 10000px;
+            margin-left: 15px;
+        }
+    </style>
+</head>
+<!-- BODY -->
+
+<body>
+
+
+    <header class="header">
+
+        <!-- LEFT  -->
+
+        <div class="left">
+
+            <div class="img">
+                <img src="img/logo.webp" alt="" srcset="">
+            </div>
+            <div class="logotext">
+                BULL's GYM
+            </div>
+
+        </div>
+
+
+
+
+
+        <!-- MID -->
+        <div class="mid">
+
+            <ul class="navbar">
+                <li><a href="#" class="home">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Bio Metric</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+
+
+
+
+        <!-- RIGHT -->
+        <div class="right">
+
+            <button class="btn" id="member">Member</button>
+
+            <button class="btn" id="email">Email</button>
+
+        </div>
+
+    </header>
+
+    <!-- Container -->
+
+    <div class="container">
+        <h1 id="Registertion"> JOIN US NOW</h2>
+            <form action="noaction.php">
+
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your name">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Phone no">
+                </div>
+
+                <div class="form-group">
+                    <input type="email" name="" placeholder="Enter your email">
+                </div>
+
+                <div class="form-group">
+                    <input type="text" name="" placeholder="Enter your Address">
+                </div>
+
+                
+
+            </form>
+
+           
+                <button class="btn" id="register">Register</button>
+            
+    </div>
+
+</body>
+
+</html>
